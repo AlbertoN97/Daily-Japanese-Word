@@ -15,7 +15,7 @@ host = '127.0.0.1'
 **Port of the web server**
 port = 5000
 
-**Higarana characters: You can remove Hiragana characters in order to avoid certain characters to be used to find new words. You can do it deleting those characters from the list or commenting via # **
+**Higarana characters: You can remove Hiragana characters in order to avoid certain characters to be used to find new words. You can do it deleting those characters from the list or commenting via # in the python script "server.py"**
     syllables = ["あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ",
                  "さ", "し", "す", "せ", "そ", "た", "ち", "つ", "て", "と",
                  "な", "に", "ぬ", "ね", "の", "は", "ひ", "ふ", "へ", "ほ",
@@ -31,4 +31,8 @@ Also you will need to install the following libraries using the following comman
 - flask
 - apscheduler
 - python-dateutil
-- ```pip install requests flask apscheduler python-dateutil```
+        pip install requests flask apscheduler python-dateutil
+
+Then you can run the server with the following command:
+        python3 server.py
+It will generate a json file which contains the daily word. If the word already exists, it will replace its content the next day.
