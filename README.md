@@ -8,12 +8,15 @@ Daily Japanese Word is a web server made using Flask on Python that prompts a di
 You will have to edit the code according to your necesities.
 
 **Japanese level of the word that will be generated. From jlpt-n5 (most basic vocabulary) to jlpt-n1 (highest japanese level vocabulary).**
+
 level = 'jlpt-n5'
 
 **IP or hostname of the host that will host the server. You will access to the web using that IP/hostname + port**
+
 host = '127.0.0.1'
 
 **Port of the web server**
+
 port = 5000
 
 **Higarana characters: You can remove Hiragana characters in order to avoid certain characters to be used to find new words. You can do it deleting those characters from the list or commenting via # in the python script "server.py"**
